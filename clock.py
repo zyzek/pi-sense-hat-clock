@@ -89,7 +89,7 @@ while True:
     hours = time_letter(local_time.hour)
     mins = local_time.minute
     secs = local_time.second
-    letter = rotate(letters_dict[hours], -secs)
+    letter = rotate(letters_dict[hours], 0)
     letter_pixels = [[128*pixel]*3 for row in letter for pixel in row]
     pixels = [letter_pixel_col(i%8,i//8,p,hours,mins) for i, p in enumerate(letter_pixels)]
     sense.set_pixels(pixels)
