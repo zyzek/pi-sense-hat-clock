@@ -96,7 +96,6 @@ while True:
 
     time.sleep(1)
 
-# TODO: fix the flickering by not using show_letter. Select from own buffers.
 # TODO: differential letter and background dimming
 # TODO: colour depending on time of day
 # TODO: vertical gradient for time of day transitions
