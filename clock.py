@@ -32,7 +32,6 @@ def time_letter(hour):
 def minutes_brightness(mins, x):
     mins_norm = mins / 60
     mins_x = mins_norm * 8
-
     x_diff = mins_x - x
 
     if x_diff < 0:
@@ -82,6 +81,7 @@ utc_time = pytz.timezone("UTC")
 
 sense = SenseHat()
 sense.low_light = True
+sense.set_rotation(180)
 
 while True:
     now = utc_time.localize(datetime.datetime.utcnow())
