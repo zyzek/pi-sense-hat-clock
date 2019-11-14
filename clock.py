@@ -168,7 +168,7 @@ if __name__ == "__main__":
     sense.low_light = True
     sense.set_rotation(180)
 
-    # Hanlde keyboard interrupts and SIGTERM signals.
+    # Handle keyboard interrupts and SIGTERM signals.
     signal.signal(signal.SIGINT, lambda signum, frame: clear_and_exit(sense))
     signal.signal(signal.SIGTERM, lambda signum, frame: clear_and_exit(sense))
 
